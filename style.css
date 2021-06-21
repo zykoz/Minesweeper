@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+.grid {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+
+.row1:nth-child(even), .row2:nth-child(odd), .row3:nth-child(even), .row4:nth-child(odd), .row5:nth-child(even), 
+.row6:nth-child(odd), .row7:nth-child(even) ,.row8:nth-child(odd), .row9:nth-child(even), .row10:nth-child(odd) {
+    background-color: green;
+}
+
+.row1:nth-child(odd), .row2:nth-child(even), .row3:nth-child(odd), .row4:nth-child(even), .row5:nth-child(odd), 
+.row6:nth-child(even), .row7:nth-child(odd) ,.row8:nth-child(even), .row9:nth-child(odd), .row10:nth-child(even) {
+    background-color: darkgreen;
+}
+
+.checked {
+    background-color: #fff!important;
+}
+
+.bomb {
+    background-color: orange!important;
+}
+
+.flag {
+    background-color: red!important;
+}
